@@ -1,0 +1,77 @@
+body {
+    place-items: center;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:rgba(255, 240, 233, 255);
+}
+
+header {
+    
+    h1 {
+        margin-block: 1rem;
+        margin-inline: auto;
+    }
+
+    .navigation_bar {
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+        justify-content: center;
+        
+        button{
+            cursor: pointer;
+            background: none;
+            padding-inline: 1rem;
+            padding-block: 0.5rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-family: inherit;
+            font-size: 1.125rem;
+        }
+    }
+}
+
+main {
+    min-height: 100dvh;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4rem;
+
+        .restaurant-Info {
+            /* border: 1px solid red; */
+            padding: 1.125rem;
+
+            .restaurant-title {
+                margin: 0.5rem;
+            }
+
+            .restaurant-desc {
+                max-width: 30ch;
+                margin-block: 1rem;
+                margin-inline: auto;
+                font-size: 1rem;
+            }
+
+            button {
+                display: block;
+                margin-inline: auto;
+                margin-block: 1rem;
+                padding: 0.5rem;
+                width: 100%;
+                border: none;
+                border-radius: 0.65rem;
+                color: whitesmoke;
+                background-color: rgba(238,84,87,255);
+            }
+        }
+        
+        img {
+            margin: 1rem;
+            width: 15rem;
+        }
+    }
+}
