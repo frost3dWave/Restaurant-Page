@@ -1,77 +1,140 @@
+ :root {
+    --clr-bg: rgba(255, 240, 233, 255);
+    --clr-primary: rgba(238, 84, 87, 255);
+}
+
 body {
-    place-items: center;
-    text-align: center;
+    background-color: var(--clr-bg);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color:rgba(255, 240, 233, 255);
+    text-align: center;
+    margin-inline: 5rem;
+    margin-bottom: 2rem;
 }
 
 header {
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 2rem;
+    padding-inline: 2rem;
+
     h1 {
+        font-size: clamp(2rem, 1.6522rem + 1.7391vw, 3rem);
+        letter-spacing: 0.125em;
         margin-block: 1rem;
-        margin-inline: auto;
     }
 
     .navigation_bar {
-        display: flex;
-        gap: 1.5rem;
-        align-items: center;
-        justify-content: center;
-        
+        padding: 1rem;
+
         button{
+            font-size: 1.5rem;
             cursor: pointer;
+            position: relative;
+            margin-inline: 1rem;
+            padding-inline: 1.125rem;
+            padding-block: 0.75rem;
+            width: max-content;
             background: none;
-            padding-inline: 1rem;
-            padding-block: 0.5rem;
             border: none;
-            border-radius: 0.5rem;
-            font-family: inherit;
-            font-size: 1.125rem;
         }
+
+        button::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 5px;
+            width: 100%;
+            background-color: var(--clr-primary);
+
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 300ms ease;
+        }  
+
+        button:hover::after{
+            transform: scaleX(1);
+        } 
     }
 }
 
 main {
-    min-height: 100dvh;
+    min-height: 65dvh;
 
     .wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        margin-block: 7.5rem;
 
         .restaurant-Info {
-            /* border: 1px solid red; */
-            padding: 1.125rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-inline: 4rem;
 
             .restaurant-title {
-                margin: 0.5rem;
+                font-size: 3rem;
+                letter-spacing: 0.125em;
+                margin-top: 0;
+                margin-bottom: 2.5rem;
             }
 
             .restaurant-desc {
-                max-width: 30ch;
-                margin-block: 1rem;
-                margin-inline: auto;
-                font-size: 1rem;
+                font-size: 1.5rem;
+                max-width: 45ch;
+                text-align: start;
+                text-wrap: stable;
+                margin-block: 2rem;
             }
 
-            button {
-                display: block;
-                margin-inline: auto;
-                margin-block: 1rem;
-                padding: 0.5rem;
+            .button-container {
+                display: flex;
                 width: 100%;
-                border: none;
-                border-radius: 0.65rem;
-                color: whitesmoke;
-                background-color: rgba(238,84,87,255);
+                button {
+                    cursor: pointer;
+                    display: block;
+                    width: max-content;
+                    font-size: 1.125rem;
+                    padding-inline: 2.5rem;
+                    padding-block: 0.875rem;
+                    margin-inline: auto;
+                    border: 2px solid var(--clr-primary);
+                    border-radius: 0.75rem;
+                    background-color: var(--clr-primary);
+                    color: oklch(13% 0.028 261.692);
+                    font-weight: 600;
+                }
+
+                button:hover {
+                    background-color: whitesmoke;
+                    transition: all 0.3s ease;
+                }
             }
         }
-        
-        img {
-            margin: 1rem;
-            width: 15rem;
-        }
+    }
+
+    img {
+        width: 28rem;
+        height: 26rem;
+        margin-inline: auto;
     }
 }
+
+.attribution {
+    font-size: 0.875rem;
+    a {
+        color: oklch(45.9% 0.187 3.815);
+    }
+
+    a:hover,
+    a:focus {
+        color: oklch(43.2% 0.232 292.759);
+    }
+
+    a:visited {
+        color: oklch(44.8% 0.119 151.328);
+    }
+} 
