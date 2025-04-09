@@ -1,0 +1,23 @@
+.wrapper {
+    border: 1px solid;
+    place-items: center;
+    margin-inline: auto;
+
+}
+.menu-page {
+    border: 1px solid;
+}
+.menu-heading {
+    font-size:3rem;
+    text-align: start;
+    border: 1px solid;
+    margin-bottom: 3rem;
+    span {
+        color: var(--clr-primary);
+    }
+}
+
+.menu-list {
+    border: 1px solid;
+    place-self: center;
+}
