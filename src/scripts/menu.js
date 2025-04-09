@@ -35,6 +35,7 @@ export function menu(){
     // for menu items
     // item one
     const menuItemBurger = document.createElement("div");
+    menuItemBurger.classList.add("menu-item-wrapper");
 
     const menuItemBurgerHeading = document.createElement("h3");
     menuItemBurgerHeading.textContent = "Classic Cheese Burger";
@@ -43,8 +44,9 @@ export function menu(){
     menuItemBurgerDesc.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam ex consequuntur ad soluta eveniet";
 
     const BurgerPriceBuybtnWrapper = document.createElement("div");
+    BurgerPriceBuybtnWrapper.classList.add("price-buyBtn-wrapper");
     const burgerPrice = document.createElement("p");
-    burgerPrice.textContent = "$4.40";
+    burgerPrice.textContent = "$11.99";
 
     const burgerBuyBtn = document.createElement("button");
     burgerBuyBtn.textContent = "Buy Now";
@@ -56,11 +58,13 @@ export function menu(){
     
     BurgerPriceBuybtnWrapper.append(burgerPrice, burgerBuyBtn);
 
-    menuItemBurger.append(menuItemBurgerHeading, menuItemBurgerDesc, BurgerPriceBuybtnWrapper, menuItemBurgerImage);
+    menuItemBurger.append(menuItemBurgerImage, menuItemBurgerHeading, menuItemBurgerDesc, BurgerPriceBuybtnWrapper);
 
 
     //item two
     const menuItemCookies = document.createElement("div");
+    menuItemCookies.classList.add("menu-item-wrapper");
+    
     const menuItemCookiesHeading = document.createElement("h3");
     menuItemCookiesHeading.textContent = "Homemade Cookies";
 
@@ -68,8 +72,9 @@ export function menu(){
     menuItemCookiesDesc.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam ex consequuntur ad soluta eveniet";
 
     const cookiesPriceBuybtnWrapper = document.createElement("div");
+    cookiesPriceBuybtnWrapper.classList.add("price-buyBtn-wrapper");
     const cookiesPrice = document.createElement("p");
-    cookiesPrice.textContent = "$2.20";
+    cookiesPrice.textContent = "$4.99";
 
 
     const cookiesBuyBtn = document.createElement("button");
@@ -81,10 +86,12 @@ export function menu(){
     
     cookiesPriceBuybtnWrapper.append(cookiesPrice, cookiesBuyBtn);
 
-    menuItemCookies.append(menuItemCookiesHeading, menuItemCookiesDesc, cookiesPriceBuybtnWrapper, menuItemCookiesImage);
+    menuItemCookies.append(menuItemCookiesImage, menuItemCookiesHeading, menuItemCookiesDesc, cookiesPriceBuybtnWrapper);
 
     // item three
     const menuItemNoodle = document.createElement("div");
+    menuItemNoodle.classList.add("menu-item-wrapper");
+
     const menuItemNoodleHeading = document.createElement("h3");
     menuItemNoodleHeading.textContent = "Lo Mein Noodles";
 
@@ -94,8 +101,9 @@ export function menu(){
 
 
     const noodlePriceBuybtnWrapper = document.createElement("div");
+    noodlePriceBuybtnWrapper.classList.add("price-buyBtn-wrapper");
     const noodlePrice = document.createElement("p");
-    noodlePrice.textContent = "$3.20";
+    noodlePrice.textContent = "$24.99";
 
     const noodleBuyBtn = document.createElement("button");
     noodleBuyBtn.textContent = "Buy Now";
@@ -106,10 +114,12 @@ export function menu(){
     
     noodlePriceBuybtnWrapper.append(noodlePrice, noodleBuyBtn);
 
-    menuItemNoodle.append(menuItemNoodleHeading, menuItemNoodleDesc, noodlePriceBuybtnWrapper, menuItemNoodleImage);
+    menuItemNoodle.append(menuItemNoodleImage, menuItemNoodleHeading, menuItemNoodleDesc, noodlePriceBuybtnWrapper);
 
     // item four
     const menuItemPadThai = document.createElement("div");
+    menuItemPadThai.classList.add("menu-item-wrapper");
+
     const menuItemPadThaiHeading = document.createElement("h3");
     menuItemPadThaiHeading.textContent = "Pad Thai Noodles";
 
@@ -119,8 +129,9 @@ export function menu(){
 
 
     const padThaiPriceBuybtnWrapper = document.createElement("div");
+    padThaiPriceBuybtnWrapper.classList.add("price-buyBtn-wrapper");
     const padThaiPrice = document.createElement("p");
-    padThaiPrice.textContent = "$4.20";
+    padThaiPrice.textContent = "$43.19";
 
     const padThaiBuyBtn = document.createElement("button");
     padThaiBuyBtn.textContent = "Buy Now";
@@ -131,11 +142,13 @@ export function menu(){
     
     padThaiPriceBuybtnWrapper.append(padThaiPrice, padThaiBuyBtn);
 
-    menuItemPadThai.append(menuItemPadThaiHeading, menuItemPadThaiDesc, padThaiPriceBuybtnWrapper, menuItemPadThaiImage);
+    menuItemPadThai.append(menuItemPadThaiImage, menuItemPadThaiHeading, menuItemPadThaiDesc, padThaiPriceBuybtnWrapper);
 
 
     // item five
     const menuItemPizza = document.createElement("div");
+    menuItemPizza.classList.add("menu-item-wrapper");
+
     const menuItemPizzaHeading = document.createElement("h3");
     menuItemPizzaHeading.textContent = "Pepperoni Pizza";
 
@@ -145,6 +158,7 @@ export function menu(){
 
 
     const pizzaPriceBuybtnWrapper = document.createElement("div");
+    pizzaPriceBuybtnWrapper.classList.add("price-buyBtn-wrapper");
     const pizzaPrice = document.createElement("p");
     pizzaPrice.textContent = "$5.20";
 
@@ -157,11 +171,13 @@ export function menu(){
     
     pizzaPriceBuybtnWrapper.append(pizzaPrice, pizzaBuyBtn);
 
-    menuItemPizza.append(menuItemPizzaHeading, menuItemPizzaDesc, pizzaPriceBuybtnWrapper, menuItemPizzaImage);
+    menuItemPizza.append(menuItemPizzaImage, menuItemPizzaHeading, menuItemPizzaDesc, pizzaPriceBuybtnWrapper);
 
 
     // item six
     const menuItemTacos = document.createElement("div"); 
+    menuItemTacos.classList.add("menu-item-wrapper");
+
     const menuItemTacosHeading = document.createElement("h3");
     menuItemTacosHeading.textContent = "Soft Chicken Tacos";
 
@@ -171,8 +187,9 @@ export function menu(){
 
 
     const tacosPriceBuybtnWrapper = document.createElement("div");
+    tacosPriceBuybtnWrapper.classList.add("price-buyBtn-wrapper");
     const tacosPrice = document.createElement("p");
-    tacosPrice.textContent = "$3.40";
+    tacosPrice.textContent = "$7.99";
 
     const tacosBuyBtn = document.createElement("button");
     tacosBuyBtn.textContent = "Buy Now";
@@ -183,7 +200,7 @@ export function menu(){
     
     tacosPriceBuybtnWrapper.append(tacosPrice, tacosBuyBtn);
 
-    menuItemTacos.append(menuItemTacosHeading, menuItemTacosDesc, tacosPriceBuybtnWrapper, menuItemTacosImage);
+    menuItemTacos.append(menuItemTacosImage, menuItemTacosHeading, menuItemTacosDesc, tacosPriceBuybtnWrapper);
 
 
     menuList.append(menuItemBurger, menuItemCookies, menuItemNoodle, menuItemPadThai, menuItemPizza, menuItemTacos);

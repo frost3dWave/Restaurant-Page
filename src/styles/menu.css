@@ -1,23 +1,92 @@
-.wrapper {
-    border: 1px solid;
+.menu-page {
+    display: flex;
+    flex-direction: column;
     place-items: center;
     margin-inline: auto;
+}
 
-}
-.menu-page {
-    border: 1px solid;
-}
 .menu-heading {
+    place-self: start;
     font-size:3rem;
     text-align: start;
-    border: 1px solid;
-    margin-bottom: 3rem;
+    margin-inline: 4rem;
+    margin-top: 4.5rem;
+    margin-bottom: 5rem;
+
     span {
         color: var(--clr-primary);
     }
 }
 
 .menu-list {
-    border: 1px solid;
-    place-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 10rem;
+    margin-top: 1rem;
+    padding-inline: 7rem;
+    padding-block: 4rem;
+
+    .menu-item-wrapper{
+        background-color: oklch(70.4% 0.191 22.216 / 30%);
+        position: relative;
+        max-width: 21.75rem;
+        padding-top: 5rem;
+        padding-bottom: 2.5rem;
+        padding-inline: 2rem;
+        border-radius: 1.5rem;
+        text-align: start;
+
+        h3 {
+            max-width: 12ch;
+            font-size: 1.35rem;
+        }
+
+        p {
+            max-width: 35ch;
+            font-size: 1.125rem;
+        }
+
+        .price-buyBtn-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 2rem;
+            padding-inline: 1rem;
+
+            p {
+                letter-spacing: 0.1em;
+                font-size: 1.35rem;
+                font-weight: 600;
+                margin-top: 0;
+            }
+
+            button{
+                cursor: pointer;
+                border: 2px solid var(--clr-primary);
+                border-radius: 0.75rem;
+                background-color: var(--clr-primary);
+                color: oklch(13% 0.028 261.692);
+                padding-inline: 1.25rem;
+                padding-block: 0.875rem;
+                width: max-content;
+                border-radius: 1rem;
+            }
+            
+            button:hover {
+                background-color: whitesmoke;
+                transition: all 0.3s ease;
+            }
+        }
+
+        img{
+            position: absolute;
+            width: 18.125rem;
+            height: 16.875rem;
+            right: -7rem;
+            top: -7rem;
+            border: 3px solid var(--clr-primary);
+            border-radius: 50%;
+            z-index: 3;
+        }
+    }
 }
