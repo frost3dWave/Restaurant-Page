@@ -4,6 +4,8 @@ import burgerImage from "../assets/images/burger.png";
 export function homePage(){
     const divContent = document.querySelector("#content"); 
 
+    divContent.innerHTML = "";
+
     const homepageWrapper = document.createElement("section");
     homepageWrapper.classList.add("homepage-wrapper");
     
