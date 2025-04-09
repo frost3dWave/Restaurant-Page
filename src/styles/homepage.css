@@ -10,8 +10,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    margin-top: 2rem;
+    margin-bottom: 2rem;
     padding-inline: 2rem;
 
     h1 {
@@ -57,12 +56,12 @@ header {
 }
 
 main {
-    min-height: 65dvh;
+    min-height: 80dvh;
 
-    .wrapper {
+    .homepage-wrapper {
         display: grid;
         grid-template-columns: repeat(2, auto);
-        margin-block: 7.5rem;
+        margin-top: 7.5rem;
 
         .restaurant-Info {
             display: flex;

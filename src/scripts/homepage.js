@@ -3,6 +3,9 @@ import burgerImage from "../assets/images/burger.png";
 
 export function homePage(){
     const divContent = document.querySelector("#content"); 
+
+    const homepageWrapper = document.createElement("section");
+    homepageWrapper.classList.add("homepage-wrapper");
     
     const newSection = document.createElement("section");
     newSection.classList.add("restaurant-Info");
@@ -34,6 +37,8 @@ export function homePage(){
     const homePageImage = document.createElement("img");
     homePageImage.src = burgerImage;
     
-    divContent.appendChild(homePageImage);
-    divContent.appendChild(newSection);
+    homepageWrapper.appendChild(homePageImage);
+    homepageWrapper.appendChild(newSection);
+
+    divContent.appendChild(homepageWrapper);
 };
