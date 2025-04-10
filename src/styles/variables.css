@@ -1,4 +1,5 @@
 :root {
     --clr-bg: rgba(255, 240, 233, 255);
     --clr-primary: rgba(238, 84, 87, 255);
+    --clr-element-bg: oklch(70.4% 0.191 22.216 / 30%);
 }

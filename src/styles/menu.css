@@ -27,7 +27,7 @@
     padding-block: 4rem;
 
     .menu-item-wrapper{
-        background-color: oklch(70.4% 0.191 22.216 / 30%);
+        background-color: var(--clr-element-bg);
         position: relative;
         max-width: 21.75rem;
         padding-top: 5rem;
